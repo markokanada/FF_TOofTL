@@ -1,0 +1,15 @@
+#main {
+    background-color: black;
+    height: 100vh;
+}
+
+.button {
+    position: relative;
+    top: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    .button {
+        display: block;
+    }
+}
