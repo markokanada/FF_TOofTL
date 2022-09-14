@@ -1,0 +1,5 @@
+busz
+kamion
+sajt
+kecske
+paci
