@@ -1,15 +1,117 @@
 #main {
-    background-color: black;
     height: 100vh;
 }
 
-.button {
-    position: relative;
-    top: 50%;
+/* Main page*/
+
+#index *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-@media screen and (max-width: 768px) {
-    .button {
-        display: block;
+#index{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f3f3f3;
+    overflow: hidden;
+}
+
+#index .container{
+    position: relative;
+    width: 1050px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    transform: skewY(-10deg);
+}
+
+#index .container .card{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: #fff;
+    transition: 0.5s;
+}
+
+#index .container .card:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background: #00c0f6;
+    transform-origin: bottom ;
+    transform: skewY(45deg);
+    transition: 0.5s;
+
+}
+
+#index .container .card:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -15px;
+    width: 15px;
+    height: 50%;
+    background: #00c0f6;
+    transform-origin: left ;
+    transform: skewY(45deg);
+    transition: 0.5s;
+
+}
+
+#index .container .card:hover{
+    transform: translateY(-40px);
+}
+
+#indey .container .card .imgBx{
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background: #00c7ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .card .imgBx img{
+    max-width: 100px;
+}
+
+.container .card .imgBx h3{
+    position: relative;
+    color: #fff;
+}
+
+.container .card .content{
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+
+@media (max-width: 414px) {
+    body {
+        overflow: auto;
+    }
+    .card {
+        width: 80%;
+        margin-bottom: 50px;
+    }
+    .container {
+        padding-top: 200px;
+        position: relative;
+        left: 15%;
+        top: 80%;
+    }
+    .container .card {
+        padding-bottom: 40px
+    }
+    .container .card:hover {
+        transform: translateY(-25px);
     }
 }
