@@ -1,4 +1,4 @@
-#index {
+.index {
     background-color: darkslategrey;
 }
 
@@ -28,7 +28,6 @@
 }
 
 .paragraph span {
-    font: 700 4em/1 "Oswald", sans-serif;
     letter-spacing: 0;
     padding: .25em 0 .325em;
     display: block;
@@ -59,4 +58,64 @@
 
 .button:hover .paragraph:hover {
     transform: scale(1.05);
+}
+
+@media screen and (min-width: 1800px) {
+    #desszertek .paragraph span {
+        font: 700 4em/1 "Oswald", sans-serif;
+    }
+    #levesek .paragraph span {
+        font: 700 4em/1 "Oswald", sans-serif;
+    }
+}
+
+@media screen and (min-width: 1310px) {
+    #desszertek .paragraph span {
+        font: 700 3em/1 "Oswald", sans-serif;
+    }
+    #main .paragraph span {
+        font: 700 4em/1 "Oswald", sans-serif;
+    }
+    #foetelek .paragraph span {
+        font: 700 4em/1 "Oswald", sans-serif;
+    }
+    #levesek .paragraph span {
+        font: 700 3em/1 "Oswald", sans-serif;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #desszertek .paragraph span {
+        font: 700 2em/1 "Oswald", sans-serif;
+    }
+    #main .paragraph span {
+        font: 700 3em/1 "Oswald", sans-serif;
+    }
+    #foetelek .paragraph span {
+        font: 700 3.5em/1 "Oswald", sans-serif;
+    }
+    #levesek .paragraph span {
+        font: 700 1.75em/1 "Oswald", sans-serif;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    #levesek .paragraph span {
+        font: 700 2.5em/1 "Oswald", sans-serif;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #desszertek .paragraph span {
+        font: 700 3em/1 "Oswald", sans-serif;
+    }
+    #main .paragraph span {
+        font: 700 4em/1 "Oswald", sans-serif;
+    }
+    #foetelek .paragraph span {
+        font: 700 4em/1 "Oswald", sans-serif;
+    }
+    #levesek .paragraph span {
+        font: 700 2em/1 "Oswald", sans-serif;
+    }
 }
